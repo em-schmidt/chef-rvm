@@ -30,7 +30,5 @@ if node['rvm']['group_id'] != 'default'
   g.run_action(:create)
 end
 
-key_server = node['rvm']['gpg']['keyserver'] || "hkp://keys.gnupg.net"
-home_dir = "#{node['rvm']['gpg']['homedir'] || '~'}/.gnupg"
 
 rvm_installation("root")
